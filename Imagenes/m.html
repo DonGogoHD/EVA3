@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo .isConnected</title>
+    <script>
+        function verificarConexion() {
+            var elemento = document.getElementById("miElemento");
+
+            if (elemento && elemento.isConnected) {
+                alert("El elemento esta conectado al arbol DOM.");
+                elemento.parentNode.removeChild(elemento);
+            } else {
+              alert("El elemento no esta conectado al arbol DOM o no existe.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="miElemento">Este es mi Elemento</div>
+    <button onclick="verificarConexion()" disabled id="miBoton">Verificar conexion</button>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            var boton = document.getElementById("miBoton");
+            boton.removeAttribute("disabled");
+        });
+    </script>
+</body>
+</html>

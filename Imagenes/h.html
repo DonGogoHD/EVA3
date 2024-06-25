@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion del DOM</title>
+</head>
+<body>
+    <h1 id="titulo">¡Hola, Front End!</h1>
+    <button id="cambiarBtn">Cambiar texto</button>
+
+    <script>
+        var titulo = document.getElementById('titulo');
+
+        var cambiarBtn = document.getElementById('cambiarBtn');
+        cambiarBtn.addEventListener('click', function() {
+            titulo.textContent = 'Chao pescao';
+        })
+    </script>
+</body>
+</html>

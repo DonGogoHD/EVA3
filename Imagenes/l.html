@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Crear Elementos en el DOM</title>
+    <script>
+        function crearElemento() {
+            var parrafo = document.createElement("p");
+
+            parrafo.innerHTML = "¡Este es un nuevo parrafo creado en el DOM!";
+
+            document.body.appendChild(parrafo);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="crearElemento()">Crear Elemento</button>
+</body>
+</html>
