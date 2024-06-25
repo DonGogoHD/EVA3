@@ -20,17 +20,28 @@
     /* ############# ############## */
     @media screen and (min-width: 480px) {
         body {
-            background-image: url(Imagenes/fondoscuro.png);
-            background-size: 100%;
-            background-position: auto;
-            padding: auto;
+            background: linear-gradient(to right,
+                    #a400ad 20%,
+                    #38b6ff 40%,
+                    #38b6ff 60%,
+                    #a400ad 80%);
+            background-size: 200%;
+            animation: shine 6s linear infinite;
+            margin: 0 auto;
         }
+    }
 
-        /* ############# ############## */
-        .ruleta h2 {
-            font-size: 4rem;
-            text-align: center;
+    /* ############# ############## */
+    @keyframes shine {
+        to {
+            background-position: 200% center;
         }
+    }
+
+    /* ############# ############## */
+    .ruleta h2 {
+        font-size: 4rem;
+        text-align: center;
     }
 
     /* ############# ############## */
@@ -155,11 +166,12 @@
         border: 1px solid black;
         padding: 8px;
         text-align: center;
+        font-weight: bold;
     }
 
     /* ############# ############## */
     .tabla th {
-        background-color: #f2f2f2;
+        background-color: #2bf9075e;
     }
 
     /* ############# ############## */
@@ -273,7 +285,7 @@
         text-align: center;
         border: 2px solid rgba(0, 0, 0, 0.36);
         border-radius: 20px;
-        background-color: #01ccff64;
+        background-color: #01ccff4d;
     }
 
     /* ############# ############## */
@@ -676,6 +688,7 @@
         display: block;
     }
 </style>
+<!-- ############################################################################################################################################################################# -->
 </head>
 <!-- ############## HTML ############## -->
 <!-- ############## SECCIONES ############## -->
@@ -897,7 +910,7 @@
         <footer>
             <p>&copy; 2024 GOGAME.</p>
         </footer>
-
+        <!-- ########################################################################################################################################################################## -->
         <!-- ############## JAVASCRIPT ############## -->
         <script>
             // SECCIONES
@@ -1036,7 +1049,7 @@
                 const imagenElement = document.getElementById("imagen");
                 let currentIndex = 0;
                 const intervalTime = 100;
-                const spinTime = 3000;
+                const spinTime = 5000;
                 //###############################################
                 // MOSTRAR IMAGEN
                 imagenElement.style.display = 'block';
