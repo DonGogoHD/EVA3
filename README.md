@@ -1,5 +1,5 @@
 # EVA3
-Landing Page
+
 
 # Nombre: Allan Franco Segura Perez
 # Rut: 18.764.324-4
